@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/development/python/Dockerfile
+      args:
+        - user=${HOST_USER}
+        - uid=${HOST_UID}
+    image: learn-django-app
+    # stdin_open: true
+    # tty: true
+    container_name: learn_django
+    ports: 
+      - "8000-8010:8000"
+    volumes:
+      - ./:/app
+
+networks:
+  default:
+    name: learn_django

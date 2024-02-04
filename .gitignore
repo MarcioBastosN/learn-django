@@ -1,0 +1,11 @@
+*.db
+*.egg*
+*.log
+*.pot
+*.py[co]
+*.sqlite3
+*.swp
+*sublime*
+*~
+__pycache__
+build/
