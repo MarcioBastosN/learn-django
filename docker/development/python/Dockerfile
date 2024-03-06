@@ -1,7 +1,7 @@
 FROM python:3.6.8
 
-ARG uid
-ARG user
+ARG uid=1000
+ARG user=developer
 
 RUN useradd -G www-data,root -u $uid -d /home/$user $user
 RUN mkdir -p /home/$user && chown -R $user:$user /home/$user

@@ -5,9 +5,6 @@ services:
     build:
       context: .
       dockerfile: docker/development/python/Dockerfile
-      args:
-        - user=${HOST_USER}
-        - uid=${HOST_UID}
     image: learn-django-app
     # stdin_open: true
     # tty: true
