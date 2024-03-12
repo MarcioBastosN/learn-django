@@ -1,0 +1,9 @@
+<h1>lista homens</h1>
+<ul>
+    {% for pessoa in object_list %}
+    <li>{{pessoa.nome}} -  
+        {{pessoa.genero}} -
+        {{pessoa.idade}}
+    </li>
+    {%  endfor %}
+</ul>
