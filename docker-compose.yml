@@ -10,7 +10,7 @@ services:
     # tty: true
     container_name: learn_django
     ports: 
-      - "8000-8010:8000"
+      - "8000:8000"
     volumes:
       - ./:/app
 
